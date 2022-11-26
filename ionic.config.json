@@ -1,0 +1,8 @@
+{
+  "name": "Predictor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "636833cc"
+}
