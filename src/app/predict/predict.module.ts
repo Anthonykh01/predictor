@@ -27,3 +27,23 @@ export interface AgeResponse {
   age: number,
   name: string,
 }
+export interface Country {
+  country_id: string,
+  probability: number,
+}
+
+export interface CountryResponse {
+  country: Country[],
+  name: string,
+}
+export interface Gender {
+  gender: string,
+  probability: number,
+}
+
+export interface GenderResponse {
+  count: number,
+  gender: string,
+  name: string,
+  probability:number,
+}

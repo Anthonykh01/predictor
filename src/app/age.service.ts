@@ -11,8 +11,8 @@ export class AgeService {
 
   
 
-  public getAge(): Observable<AgeResponse> {
-    return this.httpClient.get<AgeResponse>('https://api.agify.io/?name=');
+  public getAge(name: string): Observable<AgeResponse> {
+    return this.httpClient.get<AgeResponse>('https://api.agify.io/?name='+ name);
   }
   constructor(private httpClient: HttpClient) { }
 }

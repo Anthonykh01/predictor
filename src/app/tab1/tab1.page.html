@@ -16,7 +16,7 @@
       <ion-label position="floating">Enter a Name</ion-label>
       <ion-input [clearInput]="true" [(ngModel)]="name"></ion-input>
     </ion-item>
-    <ion-button style=" background-color:black; color:aliceblue" fill="outline" href="/predict">Submit your name</ion-button>
+    <ion-button style=" background-color:black; color:aliceblue" fill="outline" [(ngModel)]="name" href="/predict">Submit your name</ion-button>
   </div>
 
 </ion-content>
