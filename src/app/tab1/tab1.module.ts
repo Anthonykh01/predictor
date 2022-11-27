@@ -18,3 +18,11 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
   declarations: [Tab1Page]
 })
 export class Tab1PageModule {}
+export interface Dog {
+  image_url: string;
+}
+
+export interface DogResponse {
+  message: string;
+  status: string;
+}
