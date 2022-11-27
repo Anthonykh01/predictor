@@ -18,3 +18,12 @@ import { PredictPage } from './predict.page';
   declarations: [PredictPage]
 })
 export class PredictPageModule {}
+export interface Age {
+  age: number,
+}
+
+export interface AgeResponse {
+  count: number,
+  age: number,
+  name: string,
+}
