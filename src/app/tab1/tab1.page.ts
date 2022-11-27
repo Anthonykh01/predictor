@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 
 export class Tab1Page {
   public loaded = false;
-  public name = '';
+  public name ="anthony";
   public dog : Dog = {
     image_url: '',
   };
@@ -24,15 +24,14 @@ export class Tab1Page {
   }
 
   getDog(){
-    this.loaded = false;
     this.dogService.getDog().subscribe((response: DogResponse) => {
       
       this.dog = {
         image_url: response.message,
       };
-      this.loaded = true;
     });
   }
 
 
+  
 }

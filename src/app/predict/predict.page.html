@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>predict</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
 
+  <ion-card color="tertiary" style="margin-top: 5rem;">
+    <ion-item>
+      <ion-label position="floating">Enter a Name</ion-label>
+      <ion-input [(ngModel)]="name" ></ion-input>
+      <ion-button fill="outline" size="default" (click)=predict()>predict</ion-button>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-card color="tertiary" style="margin-top: 5rem;">
+    <ion-item>
+      <ion-label style="font-size:1.7rem; margin-top: 0;">your gender is : <ion-item style="font-size:1.7rem; margin-top: 0; color:red;"> {{gender?.gender}}</ion-item></ion-label>
+<ion-label style="font-size:1.7rem; margin-top: 0;">  with a probability of <ion-item style="font-size:1.7rem; margin-top: 0; color:red;">{{gender?.probability}} </ion-item> </ion-label>
+
+    </ion-item>
+  </ion-card>
+  <ion-card color="tertiary" style="margin-top: 5rem;">
+    <ion-item>
+      <ion-label style="font-size:1.7rem; margin-top: 0;">your nationality is : <ion-item style="font-size:1.7rem; margin-top: 0; color:red;"> {{country?.country_id}}</ion-item></ion-label>
+<ion-label style="font-size:1.7rem; margin-top: 0;">  with a probability of <ion-item style="font-size:1.7rem; margin-top: 0; color:red;">{{country?.probability}} </ion-item> </ion-label>
+
+    </ion-item>
+  </ion-card>  <ion-card color="tertiary" style="margin-top: 5rem;">
+    <ion-item>
+      <ion-label style="font-size:1.7rem; margin-top: 0;">your age is : <ion-item style="font-size:1.7rem; margin-top: 0; color:red;"> {{age?.age}}</ion-item></ion-label>
+<ion-label style="font-size:1.7rem; margin-top: 0;">  </ion-label>
+
+    </ion-item>
+  </ion-card>
+   
 </ion-content>
